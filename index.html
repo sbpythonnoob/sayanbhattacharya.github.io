@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sayan Bhattacharya | Physics Student</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* GENERAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    padding: 4rem 2rem 2rem 2rem;
+    text-align: center;
+}
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ffd700;
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+section:hover {
+    transform: translateY(-5px);
+}
+h2 {
+    color: #203a43;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #0f2027;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* PROJECT CARDS */
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+}
+.project-list li {
+    background: #e8eef1;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.project-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.project-list li strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #0f2027;
+}
+
+/* CONTACT */
+#contact a {
+    color: #203a43;
+    font-weight: bold;
+    text-decoration: none;
+}
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #203a43;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Sayan Bhattacharya</h1>
+    <p>Physics Student | Research & Computational Enthusiast</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am <strong>Sayan Bhattacharya</strong>, a physics student passionate about theoretical and computational physics. I enjoy exploring complex systems, quantum mechanics, chaos theory, and numerical simulations. I love turning abstract concepts into computational models and learning by doing research.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul class="project-list">
+        <li>
+            <strong>Chaos Theory Simulation</strong>
+            Numerical analysis of Lyapunov exponents in chaotic systems using Python.
+        </li>
+        <li>
+            <strong>Quantum Mechanics Talks</strong>
+            Presentation notes on quantum interpretations, including Bohmian mechanics and Bell's theorem.
+        </li>
+        <li>
+            <strong>Data Analysis Projects</strong>
+            Statistical analysis and curve fitting using Python, NumPy, and Matplotlib.
+        </li>
+        <li>
+            <strong>Koch Fractal Model</strong>
+            Computational modeling of hierarchical lattices and fractal properties.
+        </li>
+    </ul>
+    <p>Check my GitHub: <a href="https://github.com/sayanbhattacharya" target="_blank">github.com/sayanbhattacharya</a></p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sayan@example.com">sayan@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/sayanbhattacharya" target="_blank">sayanbhattacharya</a></p>
+</section>
+
+<footer>
+    &copy; 2025 Sayan Bhattacharya. All Rights Reserved.
+</footer>
+
+</body>
+</html>
