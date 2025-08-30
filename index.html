@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sayan Bhattacharya | Physics Student</title>
 <style>
-/* FONTS */
+/* FONTS & COLORS */
 body {
     font-family: "Times New Roman", Times, serif;
-    background-color: #f0f4f8;
-    color: #000;
-    line-height: 1.6;
+    background-color: #e6f0ff;
+    color: #0d1a33;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
 }
@@ -24,6 +24,7 @@ header {
     color: white;
     padding: 4rem 2rem 2rem 2rem;
     text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 header h1 {
     font-size: 3rem;
@@ -32,36 +33,44 @@ header h1 {
 header p {
     font-size: 1.2rem;
     font-style: italic;
-    margin-bottom: 2rem;
+    margin-bottom: 0.3rem;
+}
+header .quote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ffd700;
+    margin-top: 0.5rem;
 }
 nav a {
     color: white;
     margin: 0 1rem;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.2s;
 }
 nav a:hover {
     color: #ffd700;
+    transform: scale(1.05);
 }
 
 /* SECTIONS */
 section {
-    max-width: 900px;
+    max-width: 950px;
     margin: 3rem auto;
     padding: 2rem;
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    transition: transform 0.3s;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 section:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 h2 {
     color: #001f4d;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #003366;
+    border-bottom: 3px solid #003366;
     display: inline-block;
     padding-bottom: 0.3rem;
 }
@@ -69,7 +78,7 @@ h2 {
 /* PROJECT CARDS */
 .project-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
     list-style: none;
     padding: 0;
@@ -77,38 +86,38 @@ h2 {
 .project-list li {
     background: #cce0ff;
     padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .project-list li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 .project-list li strong {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
     color: #001f4d;
 }
 
-/* RESOURCES */
+/* RESOURCES & DOWNLOADS */
 .resources-list {
     list-style: none;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
 }
 .resources-list li {
     background: #cce0ff;
-    padding: 1rem 1.2rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    padding: 1.2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 .resources-list li:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 .resources-list a {
     text-decoration: none;
@@ -136,10 +145,11 @@ footer {
     background: #001f4d;
     color: white;
     margin-top: 2rem;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.2);
 }
 
 /* RESPONSIVE */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     header h1 {
         font-size: 2.2rem;
     }
@@ -155,7 +165,8 @@ footer {
 <header>
     <h1>Sayan Bhattacharya</h1>
     <p>Physics Student | Research & Computational Enthusiast</p>
-    <p> B.sc - B.K.C College | M.Sc - A.P.C College (Affiliated to WBSU)</p>
+    <p>B.sc - B.K.C College | M.Sc - A.P.C College (Affiliated to WBSU)</p>
+    <p class="quote">"Physics is like sex: sure, it may give some practical results, but that's not why we do it." – Richard Feynman</p>
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -212,10 +223,10 @@ footer {
                 Contains PYQs and Competitive Exam Study Materials
             </a>
         </li>
-            <li>
+        <li>
              <a href="https://github.com/sbpyphysics/Physics-Python-Codes" target="_blank">
                 <strong>Python Codes for Basic Physics Problems</strong><br>
-                Contains Basic Numerical methods and Physics related Problems
+                Contains Basic Numerical methods and physics-related Problems
             </a>
         </li>
     </ul>
@@ -229,14 +240,4 @@ footer {
 
 <footer>
     &copy; 2025 Sayan Bhattacharya. All Rights Reserved.
-</footer>
-
-</body>
-</html>
-
-
-
-
-
-
-
+</
